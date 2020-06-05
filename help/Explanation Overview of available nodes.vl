@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2020.1.3" />
+  <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
+    <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="B9mJLc2oxwDLGo91ig3Wpa">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="I0MNOY29Ym0M7WSJbX8gmQ">
+        <Canvas Id="RYPsHRGuihtN7XwxeB82zh" CanvasType="Group">
+          <Node Bounds="331,450,145,19" Id="TqRwqtLOIxtN1a33rpJToQ">
+            <p:NodeReference LastCategoryFullName="IO.HTTP" LastSymbolSource="VL.IO.HTTP.WebServer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessNode" Name="WebServer" />
+            </p:NodeReference>
+            <Pin Id="IEaRKt94LK8O20OApmLOhD" Name="Listener IP" Kind="InputPin" />
+            <Pin Id="RsY0u6rObNyPC7TLDzsoOF" Name="Port" Kind="InputPin" />
+            <Pin Id="KW77sQLlbsqNHidgEA6rAP" Name="Content Base Directory" Kind="InputPin" />
+            <Pin Id="OcUL7Dtt06dNlGPXZsN8SV" Name="Enabled" Kind="InputPin" />
+            <Pin Id="PeTQHyY4UHDMBSatoMZXRC" Name="Is Listening" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RKP3t1WvNAENM1qauymPyp" Comment="Enabled" Bounds="473,405,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LsKBkAsb51hMvIQnl1dOvW" Comment="Is Listening" Bounds="333,503,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NGjq5CkJm0fLMlJXHbUcVB" Comment="Content Base Directory" Bounds="427,372,86,15" ShowValueBox="true" isIOBox="true" Value="C:\temp\">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="BJVxv1FRa7oLb8CUfl6QWV" Comment="Port" Bounds="381,321,35,15" ShowValueBox="true" isIOBox="true" Value="8080">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="M56TnicKYOYM7p0KrukOKR" Comment="Listener IP" Bounds="333,294,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="BETFJORoXhjMlPbRdfaDV0" Bounds="601,291,201,21" ShowValueBox="true" isIOBox="true" Value="http://127.0.0.1:8080/foo.jpg">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
+        <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
+        <ProcessDefinition Id="DkdeiUunEGjPqmcqHzP5pF">
+          <Fragment Id="GjvNbC8USL7MuQJPNAZsKK" Patch="UBwxIRYdGuaNBmvWmIuHGI" Enabled="true" />
+          <Fragment Id="VgHgeYSDb7DQPpdxfekWws" Patch="VAs79qR7v5BOExKDOw5KyQ" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="BzNtAR9QDGePvoxxaTudxV" Ids="RKP3t1WvNAENM1qauymPyp,OcUL7Dtt06dNlGPXZsN8SV" />
+        <Link Id="J2ZWzMtzcvFNqkyyxDtBbO" Ids="PeTQHyY4UHDMBSatoMZXRC,LsKBkAsb51hMvIQnl1dOvW" />
+        <Link Id="P2UmZKiqogaNC50xJLMUDT" Ids="NGjq5CkJm0fLMlJXHbUcVB,KW77sQLlbsqNHidgEA6rAP" />
+        <Link Id="ByHIoBfPE1NLI8sBAdH3Lu" Ids="BJVxv1FRa7oLb8CUfl6QWV,RsY0u6rObNyPC7TLDzsoOF" />
+        <Link Id="CPyiva1lOFtMrrL1iwpk20" Ids="M56TnicKYOYM7p0KrukOKR,IEaRKt94LK8O20OApmLOhD" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.HTTP.WebServer" Version="0.0.0.0" />
+</Document>
