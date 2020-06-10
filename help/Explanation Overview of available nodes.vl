@@ -25,6 +25,7 @@
             <Pin Id="KW77sQLlbsqNHidgEA6rAP" Name="Content Base Directory" Kind="InputPin" />
             <Pin Id="OcUL7Dtt06dNlGPXZsN8SV" Name="Enabled" Kind="InputPin" />
             <Pin Id="PeTQHyY4UHDMBSatoMZXRC" Name="Is Listening" Kind="OutputPin" />
+            <Pin Id="KQkfmYZgRanPXBpz995w3y" Name="Statistics" Kind="OutputPin" />
           </Node>
           <Pad Id="RKP3t1WvNAENM1qauymPyp" Comment="Enabled" Bounds="473,405,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -56,6 +57,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="VBlYxRToMxtLmcm6a3i6ev" Comment="Statistics" Bounds="473,513,238,126" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
         <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
@@ -68,6 +70,7 @@
         <Link Id="P2UmZKiqogaNC50xJLMUDT" Ids="NGjq5CkJm0fLMlJXHbUcVB,KW77sQLlbsqNHidgEA6rAP" />
         <Link Id="ByHIoBfPE1NLI8sBAdH3Lu" Ids="BJVxv1FRa7oLb8CUfl6QWV,RsY0u6rObNyPC7TLDzsoOF" />
         <Link Id="CPyiva1lOFtMrrL1iwpk20" Ids="M56TnicKYOYM7p0KrukOKR,IEaRKt94LK8O20OApmLOhD" />
+        <Link Id="SP0Ohj2UWiWPp9nvVHKqWW" Ids="KQkfmYZgRanPXBpz995w3y,VBlYxRToMxtLmcm6a3i6ev" />
       </Patch>
     </Node>
   </Patch>
