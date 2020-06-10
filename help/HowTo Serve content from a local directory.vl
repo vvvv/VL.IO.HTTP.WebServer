@@ -33,7 +33,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="LsKBkAsb51hMvIQnl1dOvW" Comment="Is Listening" Bounds="333,503,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NGjq5CkJm0fLMlJXHbUcVB" Comment="Content Base Directory" Bounds="427,372,86,15" ShowValueBox="true" isIOBox="true" Value="C:\temp\">
+          <Pad Id="NGjq5CkJm0fLMlJXHbUcVB" Comment="Base Directory" Bounds="427,372,86,15" ShowValueBox="true" isIOBox="true" Value="C:\www">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -48,7 +48,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BETFJORoXhjMlPbRdfaDV0" Bounds="601,291,201,21" ShowValueBox="true" isIOBox="true" Value="http://127.0.0.1:8080/foo.jpg">
+          <Pad Id="BETFJORoXhjMlPbRdfaDV0" Bounds="595,232,201,21" ShowValueBox="true" isIOBox="true" Value="http://127.0.0.1:8080/foo.mp4">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -58,6 +58,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="VBlYxRToMxtLmcm6a3i6ev" Comment="Statistics" Bounds="473,513,238,126" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NiXE6m2YnJfQYzb92ld04r" Bounds="316,184,391,20" ShowValueBox="true" isIOBox="true" Value="This is serving any content that is available in the Base Directory">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
         <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
