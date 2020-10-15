@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.HTTP.WebServer</id>
-    <version>0.0.0</version>
+    <version>0.1.5-alpha</version>
     <title>VL.IO.HTTP.WebServer</title>
     <authors>vvvv, Joel Christner</authors>
     <owners>vvvv</owners>
@@ -13,7 +13,7 @@
     <tags>VL, http, webserver</tags>
     <license type="expression">MIT</license>
 	<dependencies>
-		<dependency id="Watson" version="3.0.11" />
+		<dependency id="Watson" version="3.3.0.1" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
   </metadata>
