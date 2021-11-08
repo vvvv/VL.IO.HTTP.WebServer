@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2020.2.2.281" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2020.2.2" />
+<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.0.606" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.0-0602-g8ed5e0ce29" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -55,7 +55,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="215,391,160,195" Id="Qeg4dPM4PPOMZJenda5AVe">
+          <Node Bounds="215,391,165,195" Id="Qeg4dPM4PPOMZJenda5AVe">
             <p:NodeReference LastCategoryFullName="IO.HTTP" LastSymbolSource="VL.IO.HTTP.WebServer.vl">
               <Choice Kind="ProcessAppFlag" Name="StaticRoute" />
               <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -85,11 +85,7 @@
                   </PinReference>
                 </p:NodeReference>
                 <Pin Id="Cwt73P5vuyALvu1ijV0RS1" Name="Input" Kind="StateInputPin" />
-                <Pin Id="MgTT2i3eLULLyMKFmKcFUj" Name="Data" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="String" />
-                  </p:TypeAnnotation>
-                </Pin>
+                <Pin Id="MgTT2i3eLULLyMKFmKcFUj" Name="Data" Kind="InputPin" />
                 <Pin Id="DYjRYAexGJmMkmqf7RzHo0" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="BKrDoyyY7HJLO5HpQqyq8W" Name="Result" Kind="OutputPin" />
               </Node>
@@ -191,6 +187,15 @@
             <Pin Id="Ihj2s1g8KnoLFvudDkFYUU" Name="Enabled" Kind="InputPin" />
             <Pin Id="J9zAwyvmjFHO0D2sLPPYL8" Name="Result" Kind="OutputPin" />
           </Node>
+          <Node Bounds="519,434,84,19" Id="HMiaWyQIlG7QZ2uY2UMG81">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToRasterImage" />
+              <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="CUoLqdK3vBBLz8qBOmd4as" Name="Input" Kind="InputPin" />
+            <Pin Id="Br7iZ4Lm5r4Mro4y209EJm" Name="Output" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
         <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
@@ -213,11 +218,12 @@
         <Link Id="BfdrY8p8sDvQGCVu9oWyj8" Ids="TdEFEqycv1xMXMIOthkfzP,Gl3nDFeNoKfNqRtv8epHNF" />
         <Link Id="FMJWGM6zdTvLPotXBB4h5i" Ids="L2wUEUsS2sVLyKLz5C2y17,GISJg5mYVYhPnpofE5haoo" />
         <Link Id="HFAohVMhRTNLl9QbD0fa68" Ids="TdEFEqycv1xMXMIOthkfzP,NF7H0jbSaK5PY8JXhx9ci1" />
-        <Link Id="LEpczUdbAALLzCUeDOKZDw" Ids="J9zAwyvmjFHO0D2sLPPYL8,VNq6dnJobhuLHa4iT3zBMK" />
+        <Link Id="LEpczUdbAALLzCUeDOKZDw" Ids="J9zAwyvmjFHO0D2sLPPYL8,CUoLqdK3vBBLz8qBOmd4as" />
         <Link Id="EakBN5f4mosNpAmmMGMMHo" Ids="ASaMW9BZI1iLpGZoC7ueaA,MgTT2i3eLULLyMKFmKcFUj" />
+        <Link Id="MaOjoxSabp3Od3EWolDV15" Ids="Br7iZ4Lm5r4Mro4y209EJm,VNq6dnJobhuLHa4iT3zBMK" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2020.2.2" />
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2021.4.0-0602-g8ed5e0ce29" />
   <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.HTTP.WebServer" Version="0.1.1-alpha" />
 </Document>
