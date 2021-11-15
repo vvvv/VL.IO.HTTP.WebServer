@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UGtdvbHR9W3LAZxLDEajWD" LanguageVersion="2021.4.0.621" Version="0.128">
-  <NugetDependency Id="O8Dv9uKy1eiPBq7KjXEu30" Location="VL.CoreLib" Version="2021.4.0-0621-g689ee39340" />
+<Document xmlns:p="property" Id="UGtdvbHR9W3LAZxLDEajWD" LanguageVersion="2021.4.0.622" Version="0.128">
+  <NugetDependency Id="O8Dv9uKy1eiPBq7KjXEu30" Location="VL.CoreLib" Version="2021.4.0-0622-gd89e9c339e" />
   <Patch Id="HO9L0C5xGQBL8rraPZnrT2">
     <Canvas Id="OtU7rcMiWa0Ni1R0UpxSFw" DefaultCategory="IO.HTTP" CanvasType="FullCategory">
       <!--
@@ -1690,6 +1690,24 @@
           <ProcessDefinition Id="AR5NSXuz8g0LoPA5DRxbYq" IsHidden="true" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ QueryDetails ************************
+
+-->
+      <Node Name="QueryDetails" Bounds="742,429" Id="JWLkqj7WDyGOC8zcQdP0ri">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="WatsonWebserver.HttpRequest" LastSymbolSource="WatsonWebserver.dll">
+          <Choice Kind="TypeFlag" Name="QueryDetails" />
+        </p:TypeAnnotation>
+        <Patch Id="IcogFvZhYUrLSEw40u2Mle">
+          <Canvas Id="EHJxCJ5ee7CMQE6yTP4Xo2" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="OBm3smc2DrINxF3Epn0qkR" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -1712,7 +1730,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZUGCtsUfDTLwHo2WcpK27" Location="VL.Skia" Version="2021.4.0-0621-g689ee39340" />
+  <NugetDependency Id="PZUGCtsUfDTLwHo2WcpK27" Location="VL.Skia" Version="2021.4.0-0622-gd89e9c339e" />
   <PlatformDependency Id="PFSFhZ2VbnQOYcZ6zyKQLi" Location="System" />
   <PlatformDependency Id="CHNgE64HxB3OMstQpsZJKQ" Location="System.IO.FileSystem" />
   <NugetDependency Id="EcRzKp9ZY98Lckki9CCOPD" Location="Watson" Version="4.2.2.3" />
