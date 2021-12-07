@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.0.606" Version="0.128">
+<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.1.684" Version="0.128">
   <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.0-0602-g8ed5e0ce29" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -26,6 +26,7 @@
             <Pin Id="AFKrHXXJKKnOqQaNGgVuGa" Name="Content Routes" Kind="InputPin" />
             <Pin Id="C6MtVbJX2uWN58MJVpVccZ" Name="Static Routes" Kind="InputPin" />
             <Pin Id="JdFogBcMtJeMSOxOahekOq" Name="Dynamic Routes" Kind="InputPin" />
+            <Pin Id="Ok468749Xj6MwGWBO0iDSF" Name="Parameter Routes" Kind="InputPin" />
             <Pin Id="OcUL7Dtt06dNlGPXZsN8SV" Name="Enabled" Kind="InputPin" />
             <Pin Id="PeTQHyY4UHDMBSatoMZXRC" Name="Is Listening" Kind="OutputPin" />
             <Pin Id="LCwn7T6oYK5LYX2zeLo62T" Name="Statistics" Kind="OutputPin" />
@@ -86,6 +87,7 @@
                 </p:NodeReference>
                 <Pin Id="Cwt73P5vuyALvu1ijV0RS1" Name="Input" Kind="StateInputPin" />
                 <Pin Id="MgTT2i3eLULLyMKFmKcFUj" Name="Data" Kind="InputPin" />
+                <Pin Id="CARiC4cL6WpLvJVBEqMDba" Name="Token" Kind="InputPin" />
                 <Pin Id="DYjRYAexGJmMkmqf7RzHo0" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="BKrDoyyY7HJLO5HpQqyq8W" Name="Result" Kind="OutputPin" />
               </Node>
@@ -194,6 +196,7 @@
               <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="CUoLqdK3vBBLz8qBOmd4as" Name="Input" Kind="InputPin" />
+            <Pin Id="OCz3Ik7hRzDNkwrA1jQ0jK" Name="Take Ownership" Kind="InputPin" />
             <Pin Id="Br7iZ4Lm5r4Mro4y209EJm" Name="Output" Kind="OutputPin" />
           </Node>
         </Canvas>
