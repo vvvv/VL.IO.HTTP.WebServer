@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="FADPOz55e7cN8VIO4zk1Hu" LanguageVersion="2021.4.1.684" Version="0.128">
-  <NugetDependency Id="RocpYPUXwzLQEfwdrUrXlh" Location="VL.CoreLib" Version="2021.4.0-0602-g8ed5e0ce29" />
+<Document xmlns:p="property" Id="FADPOz55e7cN8VIO4zk1Hu" LanguageVersion="2021.4.2.691" Version="0.128">
+  <NugetDependency Id="RocpYPUXwzLQEfwdrUrXlh" Location="VL.CoreLib" Version="2021.4.2" />
   <Patch Id="Q9uR32TSbj8POYZKTfwh44">
     <Canvas Id="E1cqOG4djaeNk4INRjSOGu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -444,7 +444,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WebServer (Routing)" />
             </p:NodeReference>
-            <Pin Id="SVPphlADIt2OuJmRFM1DRv" Name="Listener IP" Kind="InputPin" />
+            <Pin Id="K8aZsoCM4diPcrEL2CsT47" Name="Hostname or IP" Kind="InputPin" />
             <Pin Id="FHJsFaFu93mO3PgTzyaxRs" Name="Port" Kind="InputPin" />
             <Pin Id="OIMwaLSaUSrLvKunwLs4Fv" Name="Content Base Directory" Kind="InputPin" />
             <Pin Id="Qez5Zh7arliPGITsRlfWMB" Name="Content Routes" Kind="InputPin" />
@@ -474,12 +474,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OGxpj1hQdXRMP4nhsWIpuj" Comment="Listener IP" Bounds="96,629,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="FUQUNWbuG3hQJs8iS5bH5i" Comment="Port" Bounds="113,650,35,15" ShowValueBox="true" isIOBox="true" Value="8083">
+          <Pad Id="FUQUNWbuG3hQJs8iS5bH5i" Comment="Port" Bounds="107,611,35,15" ShowValueBox="true" isIOBox="true" Value="8083">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -494,6 +489,11 @@
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UMu8cMLLy0PO73kSQBpwX7" Comment="Hostname or IP" Bounds="86,592,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
           </Pad>
         </Canvas>
         <Patch Id="BUrzdupMJIHMUpTO9izItf" Name="Create" ParticipatingElements="MzIpG731sJGQKDG611CUIV" />
@@ -525,7 +525,6 @@
         <Link Id="H8T9JJisFPvPwz7op9gZGQ" Ids="AmuI5jlkJQ5O40VcgNnicm,DoyMzDhlzZjPHrftqfON0O" />
         <Link Id="IiQ66JgrT5iP41tz1fYvl4" Ids="FlcAjMbc8ujLbs9CkalFkQ,OmxlZsS5Y3FMcdeTpZVAfv" />
         <Link Id="H5MmK0bI4EGPkKXdwX4YWa" Ids="JtjpOmqJC0QP7NBnDCt3LG,QkgV5RWPvxjMrPjKW2uz2u" />
-        <Link Id="CTT7Cv1Lr73OjuwuA7FwzW" Ids="OGxpj1hQdXRMP4nhsWIpuj,SVPphlADIt2OuJmRFM1DRv" />
         <Link Id="P6RHkeKAKsTOneTpXaapnd" Ids="FUQUNWbuG3hQJs8iS5bH5i,FHJsFaFu93mO3PgTzyaxRs" />
         <Link Id="APba8kvCAxCMfQCD9Pcuhu" Ids="D5qAm6mxUkvNO9UFHZuAWM,MEiLM4pszocNLX5C6jbYnA" />
         <Link Id="KQ5pclAQPLFP82klKR9u4g" Ids="FHHgDsJR9EZOSYm5pb58dS,P3Yv011wwDiPZeeqKgakqP" />
@@ -541,12 +540,13 @@
         <Link Id="Goz0JocRpI4MjnvTvpg6dk" Ids="JJgx5ELcb9KOKmyFfmCRFy,A9i5ybwtf8PL3EG593KpTI" />
         <Link Id="GdWNV68a91UL8tYGP6rhGc" Ids="GlD4CMz4JHHON5RBcK8JFR,Oz290wi3LZkO6A4how3jIz" />
         <Link Id="UwseW8r3jXwLdOR6cvOYSX" Ids="K1KZKjhZLA0Ng20seariMo,RtpbZNyQHagNUr62aTT0jl" />
+        <Link Id="IwDKYTTUIICPuwk1hjDpYM" Ids="UMu8cMLLy0PO73kSQBpwX7,K8aZsoCM4diPcrEL2CsT47" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="SaLCzoZaFPMLEGSJQwNFJC" Location="VL.CoreLib" Version="2021.4.0-0602-g8ed5e0ce29" />
-  <NugetDependency Id="SLVSUYETuYQPozXQxCPUgb" Location="VL.Core" Version="2021.4.0-0602-g8ed5e0ce29" />
+  <NugetDependency Id="SaLCzoZaFPMLEGSJQwNFJC" Location="VL.CoreLib" Version="2021.4.2" />
+  <NugetDependency Id="SLVSUYETuYQPozXQxCPUgb" Location="VL.Core" Version="2021.4.2" />
   <NugetDependency Id="O5zvAwWkvDMLuhyA9S1MOV" Location="VL.IO.HTTP.WebServer" Version="0.1.10-alpha" />
-  <NugetDependency Id="K5g0vzasrpULGBpdrGnUae" Location="VL.Stride" Version="2021.4.1-0684-g374452e92d" />
+  <NugetDependency Id="K5g0vzasrpULGBpdrGnUae" Location="VL.Stride" Version="2021.4.2" />
   <PlatformDependency Id="MMS4nh0wS0BNHZaiLW8Smr" Location="mscorlib" />
 </Document>

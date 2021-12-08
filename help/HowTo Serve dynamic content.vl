@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2020.1.3.147" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2020.1.3" />
+<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.2.691" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.2" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -20,12 +20,13 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WebServer (Routing)" />
             </p:NodeReference>
-            <Pin Id="IEaRKt94LK8O20OApmLOhD" Name="Listener IP" Kind="InputPin" />
+            <Pin Id="PyrPUldbJNjLElO7vB7lEZ" Name="Hostname or IP" Kind="InputPin" />
             <Pin Id="RsY0u6rObNyPC7TLDzsoOF" Name="Port" Kind="InputPin" />
             <Pin Id="KW77sQLlbsqNHidgEA6rAP" Name="Content Base Directory" Kind="InputPin" />
             <Pin Id="AFKrHXXJKKnOqQaNGgVuGa" Name="Content Routes" Kind="InputPin" />
             <Pin Id="C6MtVbJX2uWN58MJVpVccZ" Name="Static Routes" Kind="InputPin" />
             <Pin Id="JdFogBcMtJeMSOxOahekOq" Name="Dynamic Routes" Kind="InputPin" />
+            <Pin Id="GXbUJOkvK9MPi9QtckCOUq" Name="Parameter Routes" Kind="InputPin" />
             <Pin Id="OcUL7Dtt06dNlGPXZsN8SV" Name="Enabled" Kind="InputPin" />
             <Pin Id="PeTQHyY4UHDMBSatoMZXRC" Name="Is Listening" Kind="OutputPin" />
             <Pin Id="LCwn7T6oYK5LYX2zeLo62T" Name="Statistics" Kind="OutputPin" />
@@ -36,17 +37,12 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="LsKBkAsb51hMvIQnl1dOvW" Comment="Is Listening" Bounds="334,649,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BJVxv1FRa7oLb8CUfl6QWV" Comment="Port" Bounds="367,331,35,15" ShowValueBox="true" isIOBox="true" Value="8081">
+          <Pad Id="BJVxv1FRa7oLb8CUfl6QWV" Comment="Port" Bounds="362,346,35,15" ShowValueBox="true" isIOBox="true" Value="8081">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="M56TnicKYOYM7p0KrukOKR" Comment="Listener IP" Bounds="334,294,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="BETFJORoXhjMlPbRdfaDV0" Bounds="486,308,201,21" ShowValueBox="true" isIOBox="true" Value="http://127.0.0.1:8081/ping">
+          <Pad Id="BETFJORoXhjMlPbRdfaDV0" Bounds="486,323,201,21" ShowValueBox="true" isIOBox="true" Value="http://127.0.0.1:8081/ping">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -85,6 +81,7 @@
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
                 </Pin>
+                <Pin Id="SnbxqPHLbPANfWTsFSDIGg" Name="Token" Kind="InputPin" />
                 <Pin Id="DYjRYAexGJmMkmqf7RzHo0" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="BKrDoyyY7HJLO5HpQqyq8W" Name="Result" Kind="OutputPin" />
               </Node>
@@ -115,6 +112,11 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="NegZHJmD6cyMFkphNaYBIl" Comment="Hostname or IP" Bounds="334,312,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
         <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
@@ -125,7 +127,6 @@
         <Link Id="BzNtAR9QDGePvoxxaTudxV" Ids="RKP3t1WvNAENM1qauymPyp,OcUL7Dtt06dNlGPXZsN8SV" />
         <Link Id="J2ZWzMtzcvFNqkyyxDtBbO" Ids="PeTQHyY4UHDMBSatoMZXRC,LsKBkAsb51hMvIQnl1dOvW" />
         <Link Id="ByHIoBfPE1NLI8sBAdH3Lu" Ids="BJVxv1FRa7oLb8CUfl6QWV,RsY0u6rObNyPC7TLDzsoOF" />
-        <Link Id="CPyiva1lOFtMrrL1iwpk20" Ids="M56TnicKYOYM7p0KrukOKR,IEaRKt94LK8O20OApmLOhD" />
         <Link Id="Mo5RPnLQLa9Mr3PD0R2BdA" Ids="PVb8FrW4WBwOBYfw7dKTJl,Ep77oRdQsQJLwnHoNvh8Aa" IsHidden="true" />
         <Link Id="E3d0mR70N8hPcjA6jThpkM" Ids="JzS4dJvTm2iQGNNWUBkekc,Mpu5u5DCZP9MgKfOmsLu9H" IsHidden="true" />
         <Link Id="QP95nKBdQcXMmOiRHVZ5uG" Ids="MRjCfKogcgWMlNyc1iZO3I,Cwt73P5vuyALvu1ijV0RS1" />
@@ -134,9 +135,10 @@
         <Link Id="CeRtt7YJ9C6MupI9O33aR8" Ids="KsMqkSGC4uyQLnYdarGuQc,DWMRRN1cC4cPXxjFIA1gNh" />
         <Link Id="PS9PQ7QcZ4UPNX37djiPNN" Ids="SA3qNpAcP44QWKJl41YKfG,C6MtVbJX2uWN58MJVpVccZ" />
         <Link Id="QoEpv9cxlcSPFCQreHX6dQ" Ids="ScvEFv4ntxJM83TZpbkFAf,UtdC3i5nchHLYWjhE2Vd7Q" />
+        <Link Id="Pwd5tgZfLTuMf1RBexf2Y9" Ids="NegZHJmD6cyMFkphNaYBIl,PyrPUldbJNjLElO7vB7lEZ" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2021.4.2" />
   <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.HTTP.WebServer" Version="0.1.1-alpha" />
 </Document>
