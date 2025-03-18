@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ptjpjy090AcLjgNCDqMHDf" LanguageVersion="2025.7.0-0253-g169ec5ff92" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2025.7.0-0253-g169ec5ff92" />
+  <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
+    <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="B9mJLc2oxwDLGo91ig3Wpa">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="I0MNOY29Ym0M7WSJbX8gmQ">
+        <Canvas Id="RYPsHRGuihtN7XwxeB82zh" CanvasType="Group">
+          <Node Bounds="129,525,125,19" Id="TqRwqtLOIxtN1a33rpJToQ">
+            <p:NodeReference LastCategoryFullName="IO.HTTP" LastDependency="VL.IO.HTTP.WebServer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="WebServer" />
+            </p:NodeReference>
+            <Pin Id="Em6MutYXSy8M6Dd7SHHApi" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CROUb7TDAodLuxYoiDbUoS" Name="Hostname or IP" Kind="InputPin" />
+            <Pin Id="RsY0u6rObNyPC7TLDzsoOF" Name="Port" Kind="InputPin" />
+            <Pin Id="KW77sQLlbsqNHidgEA6rAP" Name="Content Base Directory" Kind="InputPin" />
+            <Pin Id="NmUUSYrWJTMN2415h0Zo2d" Name="Serve from Base Directory" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Ds0Qk0aCRczLhtdHuGOGEp" Name="Content Routes" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AFl4gnWzHZ4NwFqxr54Avd" Name="Static Routes" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ChZmWnh2eHkNO01f65ine0" Name="Dynamic Routes" Kind="InputPin" />
+            <Pin Id="PgiBKPDJPAILZVZ01533Wr" Name="Parameter Routes" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OcUL7Dtt06dNlGPXZsN8SV" Name="Enabled" Kind="InputPin" />
+            <Pin Id="PeTQHyY4UHDMBSatoMZXRC" Name="Is Listening" Kind="OutputPin" />
+            <Pin Id="LCwn7T6oYK5LYX2zeLo62T" Name="Statistics" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RKP3t1WvNAENM1qauymPyp" Comment="Enabled" Bounds="302,489,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LsKBkAsb51hMvIQnl1dOvW" Comment="Is Listening" Bounds="131,578,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BJVxv1FRa7oLb8CUfl6QWV" Comment="Port" Bounds="151,225,35,15" ShowValueBox="true" isIOBox="true" Value="8086">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="BETFJORoXhjMlPbRdfaDV0" Bounds="283,207,201,21" ShowValueBox="true" isIOBox="true" Value="http://127.0.0.1:8086/foo/5">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="240,283,203,165" Id="Qeg4dPM4PPOMZJenda5AVe">
+            <p:NodeReference LastCategoryFullName="IO.HTTP" LastDependency="VL.IO.HTTP.WebServer.vl">
+              <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DynamicRoute" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="SKWtZpKmxzUPOhiuz5AQli" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VVLv2TtE2VGO8PMUhnNGuI" Name="Method" Kind="InputPin" />
+            <Pin Id="UtdC3i5nchHLYWjhE2Vd7Q" Name="Path" Kind="InputPin" />
+            <Pin Id="KsMqkSGC4uyQLnYdarGuQc" Name="Output" Kind="OutputPin" />
+            <Patch Id="JwYMZjSQVahMLvyEVoJtsQ" Name="Handler" ManuallySortedPins="true">
+              <Pin Id="PVb8FrW4WBwOBYfw7dKTJl" Name="Input" Kind="InputPin" />
+              <Pin Id="Mpu5u5DCZP9MgKfOmsLu9H" Name="Result" Kind="OutputPin" />
+              <ControlPoint Id="Ep77oRdQsQJLwnHoNvh8Aa" Bounds="255,291" />
+              <ControlPoint Id="JzS4dJvTm2iQGNNWUBkekc" Bounds="251,441" />
+              <Node Bounds="252,385,82,26" Id="BgnxaOah3z3NXMuIihRoWI">
+                <p:NodeReference LastCategoryFullName="IO.HTTP.HttpResponseBase" LastDependency="VL.IO.HTTP.WebServer.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Send" />
+                  <PinReference Kind="InputPin" Name="Data">
+                    <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:DataTypeReference>
+                  </PinReference>
+                </p:NodeReference>
+                <Pin Id="Cwt73P5vuyALvu1ijV0RS1" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MgTT2i3eLULLyMKFmKcFUj" Name="Data" Kind="InputPin" DefaultValue="pong">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="BuXQ4mL06dMOebK5ZSDJwc" Name="Token" Kind="InputPin" />
+                <Pin Id="DYjRYAexGJmMkmqf7RzHo0" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="BKrDoyyY7HJLO5HpQqyq8W" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="252,311,76,26" Id="UEUlvJboXmjOivRW0r3aaS">
+                <p:NodeReference LastCategoryFullName="IO.HTTP.HttpContextBase" LastDependency="VL.IO.HTTP.WebServer.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Response" />
+                </p:NodeReference>
+                <Pin Id="A5JmU3Bu6bQO07CTkohBs3" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NGc6WNzGINoN5qisCD8nf3" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="MRjCfKogcgWMlNyc1iZO3I" Name="Response" Kind="OutputPin" />
+              </Node>
+              <Pad Id="Vt7Wyc0pUEPLG7WQ44EzuX" Comment="Data" Bounds="325,355,63,15" ShowValueBox="true" isIOBox="true" Value="foo with ID">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+            </Patch>
+          </Node>
+          <Node Bounds="240,469,39,19" Id="GZwfxZAKaz8OwRoxzRavEg">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="DWMRRN1cC4cPXxjFIA1gNh" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SA3qNpAcP44QWKJl41YKfG" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="ODielPq2BD6M03GSpGAsLb" Comment="Hostname or IP" Bounds="131,199,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="AeOYPnoQEBSNClVtiaJp8d" Bounds="254,536,217,68" ShowValueBox="true" isIOBox="true" Value="&lt; The input &quot;Dynamic Routes&quot; is optional and needs to be enabled manually">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RsmVQnrzFewL54rCGUYqhj" Bounds="114,89,372,61" ShowValueBox="true" isIOBox="true" Value="In this example, valid request URLs are defined by a regex pattern.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="529,210,46,26" Id="BzE698YgdjaNC5Xe8NnEQk">
+            <p:NodeReference LastCategoryFullName="Text.RegularExpressions.Regex" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Regex" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="N8twu62GzdJOdTSq2VeIhN" Name="Pattern" Kind="InputPin" />
+            <Pin Id="AxDlJ8TBZCBQS3CUw7Udtw" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="KwM8qFJDombPJiyPDIjTaL" Comment="Pattern" Bounds="531,189,69,15" ShowValueBox="true" isIOBox="true" Value="^/foo/\d+$">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="AYXEOOk7L1lOG5pjEeKorB" Bounds="531,259" />
+        </Canvas>
+        <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" ParticipatingElements="Jb3fJQfr4tqNkrXolxWqg2" />
+        <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
+        <ProcessDefinition Id="DkdeiUunEGjPqmcqHzP5pF">
+          <Fragment Id="GjvNbC8USL7MuQJPNAZsKK" Patch="UBwxIRYdGuaNBmvWmIuHGI" Enabled="true" />
+          <Fragment Id="VgHgeYSDb7DQPpdxfekWws" Patch="VAs79qR7v5BOExKDOw5KyQ" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="BzNtAR9QDGePvoxxaTudxV" Ids="RKP3t1WvNAENM1qauymPyp,OcUL7Dtt06dNlGPXZsN8SV" />
+        <Link Id="J2ZWzMtzcvFNqkyyxDtBbO" Ids="PeTQHyY4UHDMBSatoMZXRC,LsKBkAsb51hMvIQnl1dOvW" />
+        <Link Id="ByHIoBfPE1NLI8sBAdH3Lu" Ids="BJVxv1FRa7oLb8CUfl6QWV,RsY0u6rObNyPC7TLDzsoOF" />
+        <Link Id="Mo5RPnLQLa9Mr3PD0R2BdA" Ids="PVb8FrW4WBwOBYfw7dKTJl,Ep77oRdQsQJLwnHoNvh8Aa" IsHidden="true" />
+        <Link Id="E3d0mR70N8hPcjA6jThpkM" Ids="JzS4dJvTm2iQGNNWUBkekc,Mpu5u5DCZP9MgKfOmsLu9H" IsHidden="true" />
+        <Link Id="QP95nKBdQcXMmOiRHVZ5uG" Ids="MRjCfKogcgWMlNyc1iZO3I,Cwt73P5vuyALvu1ijV0RS1" />
+        <Link Id="OYOQLuqNfGiNPKqNFaH1Y4" Ids="Ep77oRdQsQJLwnHoNvh8Aa,A5JmU3Bu6bQO07CTkohBs3" />
+        <Link Id="TI53VfqbY6uOJYk1VNS78k" Ids="BKrDoyyY7HJLO5HpQqyq8W,JzS4dJvTm2iQGNNWUBkekc" />
+        <Link Id="CeRtt7YJ9C6MupI9O33aR8" Ids="KsMqkSGC4uyQLnYdarGuQc,DWMRRN1cC4cPXxjFIA1gNh" />
+        <Link Id="H1QoP3zH2nkM1EtfjJUqwI" Ids="ODielPq2BD6M03GSpGAsLb,CROUb7TDAodLuxYoiDbUoS" />
+        <Link Id="GH72NXwKWUJPKQAaAuRfw3" Ids="SA3qNpAcP44QWKJl41YKfG,ChZmWnh2eHkNO01f65ine0" />
+        <Link Id="RYg8lABE42dLMLcXe33t8A" Ids="KwM8qFJDombPJiyPDIjTaL,N8twu62GzdJOdTSq2VeIhN" />
+        <Link Id="Jb3fJQfr4tqNkrXolxWqg2" Ids="AxDlJ8TBZCBQS3CUw7Udtw,AYXEOOk7L1lOG5pjEeKorB" />
+        <Link Id="Fdyjbz0WimUOf7oorp0pK7" Ids="AYXEOOk7L1lOG5pjEeKorB,UtdC3i5nchHLYWjhE2Vd7Q" />
+        <Link Id="BMgqnlhSz5QNmDRE3q1uRV" Ids="Vt7Wyc0pUEPLG7WQ44EzuX,MgTT2i3eLULLyMKFmKcFUj" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2025.7.0-0253-g169ec5ff92" />
+  <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.HTTP.WebServer" Version="0.1.1-alpha" />
+</Document>

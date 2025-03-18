@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.2.691" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.2" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MaKrmAMv4M8MvRUKPbVbmT" LanguageVersion="2025.7.0-0253-g169ec5ff92" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2025.7.0-0253-g169ec5ff92" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,36 +15,43 @@
       </p:NodeReference>
       <Patch Id="I0MNOY29Ym0M7WSJbX8gmQ">
         <Canvas Id="RYPsHRGuihtN7XwxeB82zh" CanvasType="Group">
-          <Node Bounds="331,450,145,19" Id="TqRwqtLOIxtN1a33rpJToQ">
-            <p:NodeReference LastCategoryFullName="IO.HTTP" LastSymbolSource="VL.IO.HTTP.WebServer.vl">
+          <Node Bounds="165,560,145,19" Id="TqRwqtLOIxtN1a33rpJToQ">
+            <p:NodeReference LastCategoryFullName="IO.HTTP" LastDependency="VL.IO.HTTP.WebServer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="WebServer" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Pm64QwmFSgHMREeSxRmhya" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="JlbSAlScpEKL5jWRQojG27" Name="Hostname or IP" Kind="InputPin" />
             <Pin Id="RsY0u6rObNyPC7TLDzsoOF" Name="Port" Kind="InputPin" />
             <Pin Id="KW77sQLlbsqNHidgEA6rAP" Name="Content Base Directory" Kind="InputPin" />
+            <Pin Id="HoIxUl6IL9SPQd3SvwlWS7" Name="Serve from Base Directory" Kind="InputPin" />
+            <Pin Id="LVwDZqxoZz3OLogbSNK8uo" Name="Content Routes" Kind="InputPin" />
+            <Pin Id="MQoDNkfwQJrMk94Xkykh2c" Name="Static Routes" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JakHnZ19oZYN63wdFA8Kna" Name="Dynamic Routes" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Lpbe0TkhQNLPZkE0ZIdbbn" Name="Parameter Routes" Kind="InputPin" IsHidden="true" />
             <Pin Id="OcUL7Dtt06dNlGPXZsN8SV" Name="Enabled" Kind="InputPin" />
             <Pin Id="PeTQHyY4UHDMBSatoMZXRC" Name="Is Listening" Kind="OutputPin" />
             <Pin Id="KQkfmYZgRanPXBpz995w3y" Name="Statistics" Kind="OutputPin" />
           </Node>
-          <Pad Id="RKP3t1WvNAENM1qauymPyp" Comment="Enabled" Bounds="473,405,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="RKP3t1WvNAENM1qauymPyp" Comment="Enabled" Bounds="307,515,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LsKBkAsb51hMvIQnl1dOvW" Comment="Is Listening" Bounds="333,503,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NGjq5CkJm0fLMlJXHbUcVB" Comment="Base Directory" Bounds="427,372,86,15" ShowValueBox="true" isIOBox="true" Value="C:\temp">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="LsKBkAsb51hMvIQnl1dOvW" Comment="Is Listening" Bounds="167,613,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NGjq5CkJm0fLMlJXHbUcVB" Comment="Base Directory" Bounds="223,281,73,15" ShowValueBox="true" isIOBox="true" Value="C:\www">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BJVxv1FRa7oLb8CUfl6QWV" Comment="Port" Bounds="381,321,35,15" ShowValueBox="true" isIOBox="true" Value="8081">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="BJVxv1FRa7oLb8CUfl6QWV" Comment="Port" Bounds="195,241,35,15" ShowValueBox="true" isIOBox="true" Value="8081">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BETFJORoXhjMlPbRdfaDV0" Bounds="486,304,201,21" ShowValueBox="true" isIOBox="true" Value="http://127.0.0.1:8081/foo.mp4">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="BETFJORoXhjMlPbRdfaDV0" Bounds="328,231,282,19" ShowValueBox="true" isIOBox="true" Value="http://127.0.0.1:8081/temp/image.png">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -52,9 +59,9 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VBlYxRToMxtLmcm6a3i6ev" Comment="Statistics" Bounds="473,513,238,126" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NiXE6m2YnJfQYzb92ld04r" Bounds="318,236,391,20" ShowValueBox="true" isIOBox="true" Value="This is serving any content that is available in the Base Directory">
-            <p:TypeAnnotation>
+          <Pad Id="VBlYxRToMxtLmcm6a3i6ev" Comment="Statistics" Bounds="307,623,236,100" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NiXE6m2YnJfQYzb92ld04r" Bounds="155,153,375,19" ShowValueBox="true" isIOBox="true" Value="Serve any content that is available in the given Base Directory">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -62,8 +69,59 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TsVdTxoP2JfOPOYxfY7y5N" Comment="Hostname or IP" Bounds="333,295,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="TsVdTxoP2JfOPOYxfY7y5N" Comment="Hostname or IP" Bounds="167,217,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="ROeCIpOPYjoPANs7MYENiY" Bounds="155,124,190,29" ShowValueBox="true" isIOBox="true" Value="Most basic usecase">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JqIVn3IOiWCOVHVEAqqzj1" Comment="Serve from Base Directory" Bounds="251,335,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RcCWOmJj46gOsyDtDhQsBq" Bounds="433,331,224,119" ShowValueBox="true" isIOBox="true" Value="&lt; If enabled, anything below the Base Directory will be served.&#xD;&#xA;&#xD;&#xA;If disabled, individual content below the Base Directory can be made accessible using ContentRoutes">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="277,415,79,19" Id="A0a3jLxg1WqNVTTJxroJbK">
+            <p:NodeReference LastCategoryFullName="IO.HTTP" LastDependency="VL.IO.HTTP.WebServer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ContentRoute" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Rg6pIV7DKsAQVmkVtNLsrR" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HaWdfboRo45NbSZGCKTbgZ" Name="Path" Kind="InputPin" DefaultValue="/temp/image.png" />
+            <Pin Id="DiXGuwCOA2FNrWipL2kI24" Name="Is Directory" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="UMku9c5EsrDNstz6hA8TSd" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="277,456,39,19" Id="KgeRfSVeFYIMTccu0lAaEi">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+            </p:NodeReference>
+            <Pin Id="HXuI6kQrXqRMHJFQofIqq6" Name="Input" Kind="InputPin" />
+            <Pin Id="T2uIV4rUou4Lgq8mAQhtJ1" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="FjdOKGEUaveP55fwAmUYYj" Comment="Path" Bounds="279,385,94,15" ShowValueBox="true" isIOBox="true" Value="/temp/image.png">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
@@ -80,9 +138,13 @@
         <Link Id="ByHIoBfPE1NLI8sBAdH3Lu" Ids="BJVxv1FRa7oLb8CUfl6QWV,RsY0u6rObNyPC7TLDzsoOF" />
         <Link Id="SP0Ohj2UWiWPp9nvVHKqWW" Ids="KQkfmYZgRanPXBpz995w3y,VBlYxRToMxtLmcm6a3i6ev" />
         <Link Id="Fy8rzlJ38szORxlOJR65j2" Ids="TsVdTxoP2JfOPOYxfY7y5N,JlbSAlScpEKL5jWRQojG27" />
+        <Link Id="FO2PXC47DCQPYcRWuxfVuW" Ids="JqIVn3IOiWCOVHVEAqqzj1,HoIxUl6IL9SPQd3SvwlWS7" />
+        <Link Id="QMVTvbHQ9OlPtBSrpOQDdU" Ids="UMku9c5EsrDNstz6hA8TSd,HXuI6kQrXqRMHJFQofIqq6" />
+        <Link Id="SpWD0RFn8o2Oh0cnJkxdp3" Ids="T2uIV4rUou4Lgq8mAQhtJ1,LVwDZqxoZz3OLogbSNK8uo" />
+        <Link Id="NaUvoTK5e5LMOD5GVuWWKE" Ids="FjdOKGEUaveP55fwAmUYYj,HaWdfboRo45NbSZGCKTbgZ" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2021.4.2" />
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2025.7.0-0253-g169ec5ff92" />
   <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.HTTP.WebServer" Version="0.0.0.0" />
 </Document>

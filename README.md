@@ -1,15 +1,20 @@
 # VL.IO.HTTP.WebServer
 Set of nodes to use run a webserver from VL.
+
+For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
+
+## Getting started
+- Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
+
+    `nuget install VL.IO.HTTP.WebServer -pre`
+
+- Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
+- Info on [Accessing the WebServer from outside of localhost](https://github.com/dotnet/WatsonWebserver?tab=readme-ov-file#accessing-from-outside-localhost)
+
+## Contributing
+- Report issues on [the vvvv forum](https://forum.vvvv.org/c/vvvv-gamma/28)
+- For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org)
+- When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)
+
+## Credits
 Based on the excellent .NET library [WatsonWebserver](https://github.com/jchristn/WatsonWebserver)
-
-Try it with vvvv, the visual live-programming environment for .NET  
-Download: http://visualprogramming.net
-
-## Using the library
-In order to use this library with VL you have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#manage-nugets) in the VL documentation. As described there you go to the commandline and then type:
-
-    nuget install VL.IO.HTTP.WebServer -pre
-
-Once the nuget is installed and referenced in your VL document you'll see the category "HTTP" under "IO" in the nodebrowser. 
-
-Demos are available via the Help Browser!

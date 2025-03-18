@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+<VLDocument link="HowTo Serve content from a local directory.vl" tags=""/>
+<VLDocument link="HowTo Serve content generated upon request.vl" tags=""/>
+<VLDocument link="HowTo Serve an image rendered with Skia.vl" tags=""/>
+<VLDocument link="HowTo Serve an image rendered with Stride.vl" tags=""/>
+<VLDocument link="HowTo Use dynamic routes.vl" tags=""/>
+<VLDocument link="HowTo Use parameter routes.vl" tags=""/>
+<VLDocument link="HowTo Access content from outside of localhosts.vl" tags=""/>
+</Pack>

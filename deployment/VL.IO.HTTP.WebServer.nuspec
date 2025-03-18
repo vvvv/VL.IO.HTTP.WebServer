@@ -2,24 +2,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.HTTP.WebServer</id>
-    <version>0.1.14-alpha</version>
+    <version>0.2.0-alpha</version>
     <title>VL.IO.HTTP.WebServer</title>
     <authors>vvvv, Joel Christner</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.IO.HTTP.WebServer</projectUrl>
+    <repository type="git" url="https://github.com/vvvv/VL.IO.HTTP.WebServer.git" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>A WebServer for VL</summary>
     <description>A WebServer for VL</description>
-    <tags>VL, http, webserver</tags>
+    <tags>VL, http</tags>
     <license type="expression">MIT</license>
 	<dependencies>
-		<dependency id="Watson" version="4.2.2.3" />
+		<dependency id="Watson" version="6.3.5" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
+    <readme>docs\README.md</readme>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
     <file src="nugeticon.png" target="icon\" />
+    <file src="..\README.md" target="docs\" />
   </files>
 </package>
