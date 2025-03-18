@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SHmIK8AJu5LOOuSPxgmzY7" LanguageVersion="2025.7.0-0253-g169ec5ff92" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2025.7.0-0253-g169ec5ff92" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="SHmIK8AJu5LOOuSPxgmzY7" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -273,6 +273,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2025.7.0-0253-g169ec5ff92" />
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2024.6.7" />
   <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.HTTP.WebServer" Version="0.1.1-alpha" />
 </Document>
