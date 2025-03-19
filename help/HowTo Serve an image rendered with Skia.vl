@@ -274,5 +274,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2024.6.7" />
-  <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.HTTP.WebServer" Version="0.1.1-alpha" />
+  <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.WebServer" Version="1.0.0" />
 </Document>

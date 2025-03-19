@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>VL.IO.HTTP.WebServer</id>
-    <version>0.2.1-alpha</version>
-    <title>VL.IO.HTTP.WebServer</title>
+    <id>VL.IO.WebServer</id>
+    <version>1.0.0</version>
+    <title>VL.IO.WebServer</title>
     <authors>vvvv, Joel Christner</authors>
     <owners>vvvv</owners>
-    <projectUrl>https://github.com/vvvv/VL.IO.HTTP.WebServer</projectUrl>
-    <repository type="git" url="https://github.com/vvvv/VL.IO.HTTP.WebServer.git" />
+    <projectUrl>https://github.com/vvvv/VL.IO.WebServer</projectUrl>
+    <repository type="git" url="https://github.com/vvvv/VL.IO.WebServer.git" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A WebServer for VL</description>
     <tags>VL, http</tags>

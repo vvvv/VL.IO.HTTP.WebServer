@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UGtdvbHR9W3LAZxLDEajWD" LanguageVersion="2025.7.0-0253-g169ec5ff92" Version="0.128">
-  <NugetDependency Id="O8Dv9uKy1eiPBq7KjXEu30" Location="VL.CoreLib" Version="2025.7.0-0253-g169ec5ff92" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="UGtdvbHR9W3LAZxLDEajWD" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="O8Dv9uKy1eiPBq7KjXEu30" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="HO9L0C5xGQBL8rraPZnrT2">
     <Canvas Id="OtU7rcMiWa0Ni1R0UpxSFw" DefaultCategory="IO.HTTP" CanvasType="FullCategory">
       <!--
@@ -86,7 +86,6 @@
               </p:NodeReference>
               <Pin Id="TUGUAse07bQQH51NsKfMje" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="MehezOaox6bLRPO7sdLRD1" Name="Delegate" Kind="InputPin" />
-              <Pin Id="HHPHwQNbQbCNhgX8c2V7Ok" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="FLtPlE16SdyNAb2mjZsl3l" Name="Result" Kind="OutputPin" />
             </Node>
           </Canvas>
@@ -301,7 +300,6 @@
               </p:NodeReference>
               <Pin Id="THTnjEKS4CUL3mRK1aHoRG" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="KkgA9v87mipOKS9CbnVAOE" Name="Delegate" Kind="InputPin" />
-              <Pin Id="Hvd7cGbd71ALCMFu3OT3XA" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="TmZacnZjErzLWm9mNvoinU" Name="Result" Kind="OutputPin" />
             </Node>
           </Canvas>
@@ -1482,7 +1480,6 @@
               </p:NodeReference>
               <Pin Id="Olg2USKTZhiPlYVKIcfMJY" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="ASlYbZ2VTbeO5cVNQgXFwz" Name="Delegate" Kind="InputPin" />
-              <Pin Id="V00hYBAYV3JNbnpMeMl9TM" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="Orc65XToZfWN0YSZws4hYg" Name="Result" Kind="OutputPin" />
             </Node>
           </Canvas>
@@ -1726,7 +1723,6 @@
                 </p:NodeReference>
                 <Pin Id="FCZ0hdT1dftO6sK38cXoSq" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="AhH6xjE8k3qMrByYy2WKLv" Name="Delegate" Kind="InputPin" />
-                <Pin Id="Eynu30jf35qLv8zNKoTUMd" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="C4gihxry52NOvCEZKabQOZ" Name="Result" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="DMPkc81QtFUO3JEuT3ydRP" Bounds="625,163" />
@@ -1738,7 +1734,6 @@
                 </p:NodeReference>
                 <Pin Id="Ab9TN0DxkHbOK02q0Y8SuB" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="B1zyvMuyohfLg8E6qY6IGd" Name="Delegate" Kind="InputPin" />
-                <Pin Id="RXImiJJBJmJPfVJDcVDiRP" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="Bka8GgiUaYKPNxYBgo1wwx" Name="Result" Kind="OutputPin" />
               </Node>
             </Canvas>
@@ -1804,7 +1799,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PZUGCtsUfDTLwHo2WcpK27" Location="VL.Skia" Version="2025.7.0-0253-g169ec5ff92" />
+  <NugetDependency Id="PZUGCtsUfDTLwHo2WcpK27" Location="VL.Skia" Version="2024.6.7" />
   <PlatformDependency Id="PFSFhZ2VbnQOYcZ6zyKQLi" Location="System" />
   <PlatformDependency Id="CHNgE64HxB3OMstQpsZJKQ" Location="System.IO.FileSystem" />
   <NugetDependency Id="EcRzKp9ZY98Lckki9CCOPD" Location="Watson" Version="6.3.5" />

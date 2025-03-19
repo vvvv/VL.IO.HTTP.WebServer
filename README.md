@@ -1,12 +1,12 @@
-# VL.IO.HTTP.WebServer
-Set of nodes to use run a webserver from VL.
+# VL.IO.WebServer
+For serving websites from a local directory or content created upon request via a WebServer out of vvvv.
 
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
 ## Getting started
 - Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
 
-    `nuget install VL.IO.HTTP.WebServer -pre`
+    `nuget install VL.IO.WebServer`
 
 - Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 - Info on [Accessing the WebServer from outside of localhost](https://github.com/dotnet/WatsonWebserver?tab=readme-ov-file#accessing-from-outside-localhost)
