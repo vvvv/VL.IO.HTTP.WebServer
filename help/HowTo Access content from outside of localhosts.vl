@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="M0BGmWo3WSRQMKDbxjVNDy" LanguageVersion="2024.6.7" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="CMfknWYUSVFLTnDE92HEfV" LanguageVersion="2024.6.7" Version="0.128">
   <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -15,16 +15,16 @@
       </p:NodeReference>
       <Patch Id="I0MNOY29Ym0M7WSJbX8gmQ">
         <Canvas Id="RYPsHRGuihtN7XwxeB82zh" CanvasType="Group">
-          <Pad Id="Ur1eQv2YU6zPowC5lCd3dU" Bounds="145,369,743,29" ShowValueBox="true" isIOBox="true" Value="NETSH http add urlacl url=http://[hostname]:[port]/ user=everyone listen=yes">
+          <Pad Id="ED9Uyl1JDJoOYKLwRp4F7X" Bounds="187,367,743,29" ShowValueBox="true" isIOBox="true" Value="NETSH http add urlacl url=http://[hostname]:[port]/ user=everyone listen=yes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AClxNDVvDY7OufzFOwPB1o" Bounds="124,113,581,63" ShowValueBox="true" isIOBox="true" Value="In order for the WebServer to be accessible from other devices check the following:&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+          <Pad Id="TWshYWzG3wFQDbFFGA1jht" Bounds="148,88,596,59" ShowValueBox="true" isIOBox="true" Value="In order for the WebSocket to be accessible from other devices check the following:&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -33,7 +33,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PlW6ddO719IMMVAgvcv0jA" Bounds="124,485,251,19" ShowValueBox="true" isIOBox="true" Value="If this doesn't help, see more infos here:">
+          <Pad Id="CEhuZzXPCFtL5CK8cg3CT2" Bounds="148,493,251,19" ShowValueBox="true" isIOBox="true" Value="If this doesn't help, see more infos here:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -42,7 +42,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VaZUr7GJyY6NhxTLnhdpW2" Bounds="124,507,497,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebserver#accessing-from-outside-localhost">
+          <Pad Id="BswAY10FvAUQFdFlz5NK6F" Bounds="148,515,497,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebserver#accessing-from-outside-localhost">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -51,7 +51,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="S8OFDf2iMiyM073tqCvSWH" Bounds="145,403,633,63" ShowValueBox="true" isIOBox="true" Value="The &quot;everyone&quot; in &quot;user=everyone&quot; is language specific, so e.g. in german is &quot;jeder&quot; and in spanish &quot;todos&quot;&#xD;&#xA;e.g.:&#xD;&#xA;NETSH http add urlacl url=http://192.168.0.101:8080/ user=everyone listen=yes">
+          <Pad Id="TDsBq80LcWYMEzP4HqTZDe" Bounds="187,389,634,39" ShowValueBox="true" isIOBox="true" Value="The &quot;everyone&quot; in &quot;user=everyone&quot; is language specific, so e.g. in german is &quot;jeder&quot; and in spanish &quot;todos&quot;&#xD;&#xA;e.g.:&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -60,7 +60,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="RDu8sokM1rxLxtVWEl5hgP" Bounds="73,404,60,55" ShowValueBox="true" isIOBox="true" Value="⚠️">
+          <Pad Id="U2BDdoUGS2cNCw00s9OC5B" Bounds="104,376,60,55" ShowValueBox="true" isIOBox="true" Value="⚠️">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -69,16 +69,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="ERlpUHekYWwOK442oe8NV7" Bounds="124,192,387,41" ShowValueBox="true" isIOBox="true" Value="- Open a port on your firewall to permit traffic on the TCP port upon which the webserver is listening:&#xD;&#xA;&#xD;&#xA;">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="FIZ0Co7M8vnLOsPAQGrWzE" Bounds="145,237,576,61" ShowValueBox="true" isIOBox="true" Value="Windows Firewall -&gt; Advanced Settings -&gt; Inbound Rules -&gt; New Rule -&gt; Port -&gt; TCP...">
+          <Pad Id="FvZm7JZcLXyONGpSKptN4w" Bounds="163,152,593,61" ShowValueBox="true" isIOBox="true" Value="1) Open a port on your firewall to permit traffic on the TCP port upon which the webserver is listening:&#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -87,7 +78,25 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="SObcQOT108vO6jBL3jWvVP" Bounds="124,304,380,61" ShowValueBox="true" isIOBox="true" Value="- Either run vvvv (or your exported app) as admin&#xD;&#xA;- Or add a URL ACL by running this command in an elevated commandline (ie. with admin rights):">
+          <Pad Id="BaSOJhZfJJ6P4RQ3g5BpL3" Bounds="187,214,553,22" ShowValueBox="true" isIOBox="true" Value="Windows Firewall -&gt; Advanced Settings -&gt; Inbound Rules -&gt; New Rule -&gt; Port -&gt; TCP...">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ISiV9gYeMgNP7Bfe80GldW" Bounds="163,274,497,92" ShowValueBox="true" isIOBox="true" Value="2) Either run vvvv (or your exported app) as admin, or add a URL ACL by running this command in an elevated commandline (ie. with admin rights):">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CGidOTT0p7sQH8I8sOL7dQ" Bounds="219,430,492,19" ShowValueBox="true" isIOBox="true" Value="NETSH http add urlacl url=http://192.168.0.101:4444/ user=everyone listen=yes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -106,6 +115,4 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2024.6.7" />
-  <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.WebServer" Version="1.0.0" />
 </Document>
